@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
+    <input
+      aria-label="food-input"
+      placeholder="Food Input"
+      id="food-input"
+      onchange="handleFoodChange()"
+    />
+    <button id="recipe-button" onclick="handleRecipeClick()">Give me a recipe!</button>
     <section id="recipe-section">
-      <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
-      <input
-        aria-label="food-input"
-        id="food-input"
-        onchange="handleFoodChange()"
-      />
-      <button id="recipe-button" onclick="handleRecipeClick()">
-        Give me a recipe!
-      </button>
-      <a id="recipe-label"></a>
+      <section id="recipe-0" class="recipe-section"></section>
+      <section id="recipe-1" class="recipe-section"></section>
+      <section id="recipe-2" class="recipe-section"></section>
+      <section id="recipe-3" class="recipe-section"></section>
+      <section id="recipe-4" class="recipe-section"></section>
+      <section id="recipe-5" class="recipe-section"></section>
     </section>
     <script src="./main.js"></script>
   </body>
