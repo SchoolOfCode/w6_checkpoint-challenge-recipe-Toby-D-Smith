@@ -1,0 +1,8 @@
+#recipe-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe-section {
+  width: 33%;
+  border: 1px solid black;
+}
